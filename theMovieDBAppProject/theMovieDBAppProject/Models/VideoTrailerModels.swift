@@ -1,0 +1,45 @@
+//
+//  VideoTrailerModels.swift
+//  theMovieDBAppProject
+//
+//  Created by Serhii on 2/26/23.
+//
+
+import Foundation
+
+// MARK: - ResponseVideoTrailers
+struct ResponseVideoTrailers: Codable {
+    let id: Int
+    let results: [ResultVideo]
+}
+
+// MARK: - ResultVideo
+struct ResultVideo: Codable {
+    let iso639_1: String?
+    let iso3166_1: String?
+    let name: String?
+    let key: String?
+    let site: String?
+    let size: Int?
+    let type: String?
+    let official: Bool?
+    let publishedAt: String?
+    let id: String?
+    let mediaType: String?
+
+    
+    enum CodingKeys: String, CodingKey {
+        case iso639_1 = "iso_639_1"
+        case iso3166_1 = "iso_3166_1"
+        case name
+        case key
+        case site
+        case size
+        case type
+        case official
+        case publishedAt = "published_at"
+        case id
+        case mediaType = "media_type"
+
+    }
+}

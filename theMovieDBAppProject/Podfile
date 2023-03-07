@@ -1,0 +1,12 @@
+platform :ios, '12.0'
+
+target 'theMovieDBAppProject' do
+
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'SDWebImage', '~> 5.0'
+  pod "YoutubePlayer-in-WKWebView", "~> 0.3.0"
+  pod 'RealmSwift', '~>10'
+
+end

@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Realm (10.34.1):
+    - Realm/Headers (= 10.34.1)
+  - Realm/Headers (10.34.1)
+  - RealmSwift (10.34.1):
+    - Realm (= 10.34.1)
+  - SDWebImage (5.15.0):
+    - SDWebImage/Core (= 5.15.0)
+  - SDWebImage/Core (5.15.0)
+  - YoutubePlayer-in-WKWebView (0.3.8)
+
+DEPENDENCIES:
+  - Alamofire
+  - RealmSwift (~> 10)
+  - SDWebImage (~> 5.0)
+  - YoutubePlayer-in-WKWebView (~> 0.3.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - YoutubePlayer-in-WKWebView
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Realm: fe824cd5b183cd55a50a6bcb4bce3ac1650e60b6
+  RealmSwift: c7f668f82982fc8b62366b78b8dc761f15141df6
+  SDWebImage: 9bec4c5cdd9579e1f57104735ee0c37df274d593
+  YoutubePlayer-in-WKWebView: 4fca3b4f6f09940077bfbae7bddb771f2b43aacd
+
+PODFILE CHECKSUM: 694add13694f368675317f1c6f23b591c6bce7db
+
+COCOAPODS: 1.11.3
