@@ -39,6 +39,7 @@ class MovieDetailViewController: UIViewController {
 //            }
 //        }
 //    }
+    
     var isFavorite: Bool = false {
         didSet {
             if isFavorite {
@@ -58,7 +59,6 @@ class MovieDetailViewController: UIViewController {
             }
         }
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
