@@ -16,6 +16,7 @@
 		C544B34629B121230081F345 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C544B34429B121230081F345 /* SearchTableViewCell.swift */; };
 		C544B34729B121230081F345 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C544B34529B121230081F345 /* SearchTableViewCell.xib */; };
 		C544B34929B1269A0081F345 /* SearchMediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C544B34829B1269A0081F345 /* SearchMediaViewModel.swift */; };
+		C571C6DD29C8E73C007E72EA /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C571C6DC29C8E73C007E72EA /* RealmDataManager.swift */; };
 		C57D4AF4297C2742004B3A09 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C57D4AF3297C2742004B3A09 /* Podfile */; };
 		C57D4AF9297C7CF2004B3A09 /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D4AF7297C7CF2004B3A09 /* TrendingTableViewCell.swift */; };
 		C57D4AFA297C7CF2004B3A09 /* TrendingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57D4AF8297C7CF2004B3A09 /* TrendingTableViewCell.xib */; };
@@ -48,6 +49,7 @@
 		C544B34429B121230081F345 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		C544B34529B121230081F345 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		C544B34829B1269A0081F345 /* SearchMediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaViewModel.swift; sourceTree = "<group>"; };
+		C571C6DC29C8E73C007E72EA /* RealmDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmDataManager.swift; path = ../../../../GitProjectCourseApp/theMovieDBAppProject/theMovieDBAppProject/Models/RealmDataManager.swift; sourceTree = "<group>"; };
 		C57D4AF3297C2742004B3A09 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C57D4AF7297C7CF2004B3A09 /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
 		C57D4AF8297C7CF2004B3A09 /* TrendingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingTableViewCell.xib; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				C5222A3C29AA015700805710 /* SearchResultMediaModels.swift */,
 				C5D10E1829AB7D3000D33CED /* VideoTrailerModels.swift */,
 				C53CC0FC29B472C500384498 /* FavoriteRealmModels.swift */,
+				C571C6DC29C8E73C007E72EA /* RealmDataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				C58C7ADF2972BEA60025C93D /* SceneDelegate.swift in Sources */,
 				C57EDEF42986BCC000D591ED /* Constants.swift in Sources */,
 				C544B34629B121230081F345 /* SearchTableViewCell.swift in Sources */,
+				C571C6DD29C8E73C007E72EA /* RealmDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

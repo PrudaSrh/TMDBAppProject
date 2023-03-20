@@ -188,7 +188,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="saveMediaToRealm:" destination="rAE-fM-aXc" eventType="touchUpInside" id="AIb-Ph-OFM"/>
+                                                    <action selector="addToFavoriteButtonPressed:" destination="rAE-fM-aXc" eventType="touchUpInside" id="e4D-um-UhD"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W66-fv-dPx">
@@ -258,8 +258,8 @@
                     <navigationItem key="navigationItem" id="E1Z-uA-Gg8"/>
                     <size key="freeformSize" width="378" height="1400"/>
                     <connections>
+                        <outlet property="addToFavoriteButton" destination="ev9-Fw-uw4" id="jmj-cV-zvU"/>
                         <outlet property="contentUIView" destination="Rvu-XD-uMR" id="Ti7-MR-wwG"/>
-                        <outlet property="favoriteButton" destination="ev9-Fw-uw4" id="Q92-zb-DUp"/>
                         <outlet property="loadingView" destination="Eus-T7-Ag9" id="lgJ-0w-09g"/>
                         <outlet property="originalTitle" destination="TLy-gJ-dVP" id="bdd-uc-EsD"/>
                         <outlet property="overview" destination="W66-fv-dPx" id="PKc-Dj-Cxl"/>

@@ -30,7 +30,6 @@ class TrendingMovieViewController: UIViewController {
         tableView.setContentOffset(.zero, animated: false)
         tableView.reloadData()
         
-        //        let selectedMediaType: MediaType = (typeSegmentControl.selectedSegmentIndex == 0) ? .movie : .tv
     }
 }
 
@@ -38,7 +37,6 @@ class TrendingMovieViewController: UIViewController {
 extension TrendingMovieViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.moviesViewModel.arrayOfMovies.count
         switch typeSegmentControl.selectedSegmentIndex {
         case 0:
             TrendingMediaViewModel.stateSegment = .movie

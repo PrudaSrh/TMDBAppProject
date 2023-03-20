@@ -1,3 +1,9 @@
+//
+//  TrandingMovieModels.swift
+//  theMovieDBAppProject
+//
+//  Created by Serhii on 1/21/23.
+
 
 import Foundation
 
@@ -18,21 +24,22 @@ struct TrandingMovies: Codable {
 
 // MARK: - Movie
 struct Movie: Codable {
-    let adult: Bool
-    let backdropPath: String
-    let id: Int
-    let title: String
-    let originalLanguage: OriginalLanguage
-    let originalTitle: String
-    let overview: String
-    let posterPath: String
+    let adult: Bool?
+    let backdropPath: String?
+    let id: Int?
+    let title: String?
+    let originalLanguage: String?
+//    let originalLanguage: OriginalLanguage?
+    let originalTitle: String?
+    let posterPath: String?
+    let overview: String?
     let mediaType: String?
-    let genreIDS: [Int]
-    let popularity: Double
-    let releaseDate: String
-    let video: Bool
-    let voteAverage: Double
-    let voteCount: Int
+    let genreIDS: [Int]?
+    let popularity: Double?
+    let releaseDate: String?
+    let video: Bool?
+    let voteAverage: Double?
+    let voteCount: Int?
     
     enum CodingKeys: String, CodingKey {
         case adult
@@ -53,7 +60,8 @@ struct Movie: Codable {
     }
 }
 
-enum OriginalLanguage: String, Codable {
-    case en = "en"
-    case es = "es"
-}
+//enum OriginalLanguage: String, Codable {
+//    case en = "en"
+//    case ko = "ko"
+//    case no = "no"
+//}

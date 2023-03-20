@@ -14,6 +14,9 @@ class MovieDetailViewModel {
     var typeSegment: TrendingMovieViewController?
     var videosPath: [String] = []
     var test: Bool = true
+    var movieFromRealm: MovieRealm?
+    var tvShowFromRealm: TVRealm?
+
     
     var media: SearchResultMedia?
     var movie: Movie?
@@ -31,6 +34,40 @@ class MovieDetailViewModel {
     
     init(tv: TVShows) {
         self.tv = tv
+    }
+    
+    // MARK: - Public Methods
+    
+    func saveMovieToRealm(movie: Movie?) {
+        guard let movie = movie else {
+            return
+        }
+        MovieDataManager.shared.saveMovie(movie: movie)
+    }
+    
+   
+    func deleteMovie(movie: Movie?) {
+        guard let movie = movie else {
+            return
+        }
+        let movieRealm = MovieDataManager.shared.getMovieToRealm(movie: movie)
+        MovieDataManager.shared.deleteMovie(movie: movieRealm)
+    }
+    
+    func saveTVShowToRealm(tvShow: TVShows?) {
+        guard let tvShow = tvShow else {
+            return
+        }
+        MovieDataManager.shared.saveMovie(tvShow: tv)
+    }
+    
+   
+    func deleteTVShow(tvShow: TVShows?) {
+        guard let tvShow = tvShow else {
+            return
+        }
+        let tvRealm = MovieDataManager.shared.getTVShowToRealm(tvShow: tvShow)
+        MovieDataManager.shared.deleteTVShow(tvShow: tvRealm)
     }
     
     // MARK: - Videos reguest Movie

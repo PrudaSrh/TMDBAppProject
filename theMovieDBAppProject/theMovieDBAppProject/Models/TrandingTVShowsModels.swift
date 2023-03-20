@@ -1,3 +1,8 @@
+//
+//  TrandingTVShowsModels.swift
+//  theMovieDBAppProject
+//
+//  Created by Serhii on 1/21/23.
 
 import Foundation
 
@@ -18,22 +23,21 @@ struct TrandingTVShows: Codable {
 
 // MARK: - TVShows
 struct TVShows: Codable {
-    let adult: Bool
-    let backdropPath: String
-    let id: Int
-    let name: String
-    let originalLanguage: String
-    let originalName: String
-    let overview: String
-    
-    let posterPath: String
+    let adult: Bool?
+    let backdropPath: String?
+    let id: Int?
+    let name: String?
+    var originalLanguage: String?
+    let originalName: String?
+    let overview: String?
+    let posterPath: String?
     let mediaType: String?
-    let genreIDS: [Int]
-    let popularity: Double
-    let firstAirDate: String
-    let voteAverage: Double
-    let voteCount: Int
-    let originCountry: [String]
+    let genreIDS: [Int]?
+    let popularity: Double?
+    let firstAirDate: String?
+    let voteAverage: Double?
+    let voteCount: Int?
+    let originCountry: [String]?
     
     enum CodingKeys: String, CodingKey {
         case adult
@@ -53,7 +57,5 @@ struct TVShows: Codable {
         case originCountry = "origin_country"
     }
 }
-
-
 
 

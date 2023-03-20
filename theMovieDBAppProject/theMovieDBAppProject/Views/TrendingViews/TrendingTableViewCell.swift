@@ -34,7 +34,7 @@ class TrendingTableViewCell: UITableViewCell {
                                         completed: { [weak self] _, _, _, _ in
             guard let self = self else { return }
             self.loadingView.stopAnimating()
-            self.ratingLabel.text = String(format: "%.1f", TrandingMovies.voteAverage)
+            self.ratingLabel.text = String(format: "%.1f", TrandingMovies.voteAverage ?? 0.0)
         })
     }
     
@@ -45,7 +45,7 @@ class TrendingTableViewCell: UITableViewCell {
                                         completed: { [weak self] _, _, _, _ in
             guard let self = self else { return }
             self.loadingView.stopAnimating()
-            self.ratingLabel.text = String(format: "%.1f", TrandingTVShows.voteAverage)
+            self.ratingLabel.text = String(format: "%.1f", TrandingTVShows.voteAverage ?? 0.0)
         })
     }
     
